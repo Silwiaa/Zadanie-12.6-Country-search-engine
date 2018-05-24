@@ -8,15 +8,24 @@ $(function () {
     
     //SEARCH COUNTRIES BY USER INPUT
     function searchCountries() {
-  	 var countryName = $('#country-name').val();
+        var countryName = $('#country-name').val();
         
-    if (!countryName.lenght).countryName='Poland';
+        if(!countryName.lenght)countryName='Poland';
     
-    $ajax({
-        url:url + countryName,
-        method: 'GET',
-        SUCCESS: showCountriesList
-    });
-}
+        $ajax({
+            url:url + countryName,
+            method: 'GET',
+            SUCCESS: showCountriesList
+        });
+    }
+    
+    // SHOWING RESULTS 
+    function showCountriesList(resp) {
+        countriesList.empty();
+        resp.firEach(function(item) {
+            $('<li>').text(item.name).appendTo(countriesList);
+            
+        });
+    }
 });
 
