@@ -2,4 +2,15 @@ $(function () {
     // URL VARIABLE
    var url = 'https://restcountries.eu/rest/v1/name/',
        countriesList = $('#countries'); 
+    
+    // SEARCH BUTTON
+    $('#search').click(searchCountries);
+    
+    //SEARCH COUNTRIES BY USER INPUT
+    function searchCountries() {
+  	 var countryName = $('#country-name').val();
+        
+    if(!countryName.lenght).countryName='Poland';
+}
 });
+
