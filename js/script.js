@@ -10,7 +10,13 @@ $(function () {
     function searchCountries() {
   	 var countryName = $('#country-name').val();
         
-    if(!countryName.lenght).countryName='Poland';
+    if (!countryName.lenght).countryName='Poland';
+    
+    $ajax({
+        url:url + countryName,
+        method: 'GET',
+        SUCCESS: showCountriesList
+    });
 }
 });
 
