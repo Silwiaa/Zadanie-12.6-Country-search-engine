@@ -16,7 +16,7 @@ $(function () {
         $ajax(
             url: url + countryName,
             method: 'GET',
-            success: showCountriesList
+            success: showCountriesList,
         );
     }
     
