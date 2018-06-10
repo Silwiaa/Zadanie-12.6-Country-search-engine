@@ -1,8 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-$fonts: 
+$fonts: "Open Sans", sans-serif;
 $h1-fonts: #0001F8;
+$ul-background: #FEFF97;
+$h2-background: #00007F;
+$h2-color: white;
+$container-background: #FECC00;
+$button: #0608DC;
+
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    font-family: $fonts;
+    max-width: 1200px;
+    background-color: $container-background;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.search_country {
+    text-align: center;
+}
 
 h1 {
     color: $h1-fonts;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 25px;
 }
+
+button {
+    padding: 15px;
+    font-size: 15px;
+    background-color: $button;
+    color: $h2-color;
+    border-radius: 10px;
+}
+
+input {
+    padding: 15px;
+    height: 10px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+h2 {
+    background-color: $h2-background;
+    color: $h2-color;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.list {
+    max-width: 850px;
+    margin: 25px auto;
+    background-color: $ul-background;
+}
+
+li {
+    color: $h1-fonts;
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+ul {
+    margin: 0;
+}
+
