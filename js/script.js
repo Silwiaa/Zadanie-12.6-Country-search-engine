@@ -13,11 +13,11 @@ $(function () {
         
         if(!countryName.lenght) countryName='Poland';
     
-        $ajax(
+        $ajax({
             url: url + countryName,
             method: 'GET',
             success: showCountriesList,
-        );
+        });
     }
     
     // SHOWING RESULTS 
