@@ -56,12 +56,12 @@ li {
     list-style: none;
     padding: 15px;
     text-align: center;
+    display: block;
 }
 
 ul {
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
