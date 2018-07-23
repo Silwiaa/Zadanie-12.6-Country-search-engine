@@ -11,7 +11,7 @@ $(function () {
     function searchCountries() {
         var countryName = $('#country-name').val();
         
-        if(!countryName.lenght) countryName='Poland';
+        if(!countryName.length) countryName='Poland';
     
         $.ajax({
             url: url + countryName,
