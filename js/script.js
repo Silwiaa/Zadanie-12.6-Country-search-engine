@@ -27,7 +27,7 @@ $(function () {
         
         resp.forEach(function(item) {
             $('<li>').text(item.name).appendTo(countriesList);
-            $('li').text(item.capital).appendTo(capitalsList);
+            $('<li>').text(item.capital).appendTo(capitalsList);
         });
     }
 });
