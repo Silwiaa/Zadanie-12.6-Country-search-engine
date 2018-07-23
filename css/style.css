@@ -52,10 +52,10 @@ h2 {
 }
 
 li {
-  color: #0001F8;
-  list-style: none;
-  display: inline-block;
-  padding: 15px;
+    color: #0001F8;
+    list-style: none;
+    padding: 15px;
+    text-align: center;
 }
 
 ul {
